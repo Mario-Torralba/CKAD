@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: nombre
+  labels:
+    app: guestbook
+    tier: nombre
+spec:
+  # modifica las réplicas según tu caso de uso
+  replicas: 3
+  selector:
+    matchLabels:
+      tier: nombre
+  template:
+    metadata:
+      labels:
+        tier: nombre
+    spec:
+      containers:
+      - name: nginx
+        image: nginx

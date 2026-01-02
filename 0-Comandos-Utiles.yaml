@@ -1,0 +1,4 @@
+kubectl api-resources # Lista todos los recursos disponibles incluyendo los api-version
+kubectl explain pod # Información detallada de un recurso
+kubectl explain pod.spec # Información detallada de un recurso
+kubectl explain pods --recursive # Información detallada de un recurso
